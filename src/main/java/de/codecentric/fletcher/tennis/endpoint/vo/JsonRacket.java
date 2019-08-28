@@ -3,7 +3,7 @@ package de.codecentric.fletcher.tennis.endpoint.vo;
 import lombok.Data;
 
 @Data
-public class Racket {
+public class JsonRacket {
 
   Integer lengthInCm;
 }

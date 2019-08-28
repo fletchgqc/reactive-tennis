@@ -14,7 +14,7 @@ import org.springframework.test.web.reactive.server.WebTestClient;
  */
 @SpringBootTest
 @AutoConfigureWebTestClient
-class HandlerTest {
+class BallsHandlerTest {
 
   private String validRequest = "{\"colour\":\"yellow\"}";
 
