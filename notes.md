@@ -14,6 +14,19 @@ Truly reactive with Spring Data
 - Spring r2dbc https://r2dbc.io
 
 
+
 Setup:
 Increase font size in three places, including
 Settings -> Editor -> Color Scheme -> Console Font
+
+Script:
+- Flux tennis ball demo
+- Tests
+- Aufrufe von Remote-APIs und
+- Logging with logOnNext
+- Logging with MdcLogger
+- Fehlerbehandlung
+- relationaler Datenbankzugriff
+- Kafka-Integration?
+
+https://github.com/fletchgqc/reactive-tennis
