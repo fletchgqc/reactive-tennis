@@ -4,6 +4,7 @@ import de.codecentric.fletcher.tennis.config.MdcLogger;
 import de.codecentric.fletcher.tennis.service.vo.User;
 import de.codecentric.fletcher.tennis.util.JsonSerializer;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.ClientResponse;
@@ -13,13 +14,15 @@ import reactor.core.publisher.Mono;
 @Service
 @Slf4j
 public class UserService {
-  public static final String HOSTNAME = "http://jsonplaceholder.typicode.com";
 
   WebClient webClient;
   JsonSerializer serializer;
 
-  public UserService(WebClient.Builder webClientBuilder, JsonSerializer serializer) {
-    this.webClient = webClientBuilder.baseUrl(HOSTNAME).build();
+  public UserService(
+      WebClient.Builder webClientBuilder,
+      JsonSerializer serializer,
+      @Value("${backend.baseUrl}") String baseUrl) {
+    this.webClient = webClientBuilder.baseUrl(baseUrl).build();
 
     this.serializer = serializer;
   }
