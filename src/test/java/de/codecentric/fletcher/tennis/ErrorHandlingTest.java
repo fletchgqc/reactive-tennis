@@ -20,7 +20,7 @@ public class ErrorHandlingTest {
   */
 
   @Test
-  public void throwingExceptionShoudResultInErrorFlux() {
+  public void throwingExceptionShouldResultInErrorFlux() {
     Flux<String> fluxWhichWillThrow =
         Flux.just("Johannes", "Sebastian", "Kai", "Damien")
             .map(
