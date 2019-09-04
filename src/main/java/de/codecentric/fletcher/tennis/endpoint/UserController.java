@@ -25,9 +25,7 @@ public class UserController {
       @PathVariable Integer id,
       @RequestHeader(required = false, name = MdcLogger.CORRELATION_ID) String correlationId) {
 
-    return userService
-        .getUserName(id)
-        .subscriberContext(Context.of(MdcLogger.CORRELATION_ID, correlationId));
+    return null;
   }
 
   @PostMapping(value = "/users", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)

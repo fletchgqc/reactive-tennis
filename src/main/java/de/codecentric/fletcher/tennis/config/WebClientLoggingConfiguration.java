@@ -16,7 +16,7 @@ public class WebClientLoggingConfiguration {
    * This configures the {@link WebClient.Builder} which is used to make HTTP calls to log all
    * requests and responses, respecting the MDC context.
    */
-  @Bean
+//  @Bean
   WebClientCustomizer webClientLoggingCustomizer() {
     return (WebClient.Builder builder) -> builder.filter(logRequest()).filter(logResponse());
   }

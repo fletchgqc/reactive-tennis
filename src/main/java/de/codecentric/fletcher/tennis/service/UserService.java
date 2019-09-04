@@ -27,7 +27,25 @@ public class UserService {
     this.serializer = serializer;
   }
 
-  public Mono<String> getUserName(Integer id) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  public Mono<String> getUserName2(Integer id) {
     return webClient
         .get()
         .uri("/users/{id}", id)
