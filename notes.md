@@ -9,17 +9,14 @@ browser:
 - jsonplaceholder
 - Flux api
 
-disable logging filter bean and logging config in properties
-
-
 Script:
-- Intro, Flux tennis ball demo 9:00
-- Aufrufe von Remote-APIs (incl test) 38:41 (= 8)
-- Logging with logOnNext 48:27 (= 10)
-- Logging with MdcLogger 1:00:46 (= 18)
-- relationaler Datenbankzugriff 1:06:41 (= 6)
-- Fehlerbehandlung 1:12:39 (= 6)
-- Kafka-Integration? (actulally more fehler stuff 1:15:23 = 3)
+- Intro, Flux tennis ball demo (10)
+- Aufrufe von Remote-APIs (incl test) (8)
+- Logging with logOnNext (10)
+- Logging with MdcLogger (18)
+- relationaler Datenbankzugriff (6)
+- Fehlerbehandlung (6)
+- Kafka-Integration/fehler-handling (3)
 
 Other
 - Webflux.fn vs Controller
